@@ -1,3 +1,7 @@
+@use '../../../assets/flex.scss';
+@use '../../../assets/spacing.scss';
+
+
 $primary-color: #7a97ff;
 $secondary-color: #959aac;
 $divider-color: #dadce0;
@@ -60,25 +64,6 @@ $black: #242c44;
   font-weight: 700;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.justify-conten-center {
-  justify-content: center;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.align-items-end {
-  align-items: flex-end;
-}
-
-.flex-direction-col {
-  flex-direction: column;
-}
 
 .divider-group {
   line-height: 1.5;
@@ -189,29 +174,6 @@ button {
   }
 }
 
-.mt-16 {
-  margin-top: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-16 {
-  margin-bottom: 1rem;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.p-0 {
-  padding: 0;
-}
-
-.pb-16 {
-  padding-bottom: 1rem;
-}
 
 .prefix-icon {
   color: $primary-color;
