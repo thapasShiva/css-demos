@@ -1,0 +1,146 @@
+@use '../../../assets/flex.scss';
+@use '../../../assets/spacing.scss';
+
+$primary-color: #756af8;
+$secondary-color: #959aac;
+$divider-color: #dadce0;
+$danger: #ff6161;
+$white: #ffffff;
+$black: #242c44;
+$gray-light: #f3f3fb;
+
+.container {
+  background-color: $gray-light;
+  height: 100vh;
+}
+
+header {
+  height: 72px;
+  background-color: $white;
+  line-height: 72px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.content {
+  display: flex;
+  height: calc(100vh-72px);
+  position: fixed;
+  top: 72px;
+  box-sizing: border-box;
+}
+
+.sideBar {
+  flex: 0 0 20rem;
+  min-width: 20rem;
+  width: 20rem;
+  max-width: 20rem;
+  background-color: $white;
+  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+   
+  
+}
+
+.mainContent {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.navLeft {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navRight {
+  flex: 1;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon-grp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-light;
+  color: $primary-color;
+}
+
+.logo {
+  width: 20em;
+  min-width: 20em;
+  flex: 0 0 20em;
+}
+
+.fnt-sz-24 {
+  font-size: 1.5rem;
+}
+
+.form-element {
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem 0.75rem;
+  border: 1px solid $divider-color;
+  line-height: 1.5;
+  font-size: 14px;
+  border-radius: 0.625rem;
+  display: inline-flex;
+  background-color: $white;
+  background-image: none;
+  //   justify-content: space-around;
+
+  span {
+    flex: 0.05;
+    line-height: 1.5;
+  }
+
+  span.prefix-icon > i {
+    color: $primary-color;
+    margin-right: 0.25rem;
+  }
+
+  input {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $black;
+    font-weight: 500;
+    background-color: $white;
+    border: 1px solid $white;
+    transition: all 0.3s;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .navLeft {
+    display: none;
+  }
+}
