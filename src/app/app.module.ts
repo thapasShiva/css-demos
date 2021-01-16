@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
 import { CssLoginScreenComponent } from './screens/css-login-screen/css-login-screen.component';
+import { CssHomeScreenComponent } from './screens/css-home-screen/css-home-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CssLoginScreenComponent
+    CssLoginScreenComponent,
+    CssHomeScreenComponent
   ],
   imports: [
     BrowserModule,
